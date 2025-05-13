@@ -66,6 +66,8 @@ formElement.addEventListener("submit", async (e) => {
 	feedbackCommentsWrapper.appendChild(commentElement);
 });
 
+// la function du chargement du DOM ne marche pas 
+
 window.addEventListener("DOMContentLoaded", () => {
     const response = await fetch(`${API_URL}/feedbacks/${FEEDBACK_ID}`, { method: "POST" });
 
